@@ -1,0 +1,6 @@
+id,name,brush_color,primary_insured_id,contract_effective_date
+1,Anakin,blue,,2018-01-01
+2,Padme,pink,2,,
+3,Luke,blue,2,,
+4,Leia,green,2,,
+5,Ben,green,2,,

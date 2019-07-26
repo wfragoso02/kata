@@ -1,0 +1,42 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "boxing/kata/boxing_kata"
+
+Boxing::Kata::report
+a = Manager.new('./spec/fixtures/family_preferences.csv')
+
+puts '**Importing family preferences**'
+puts ' '
+Printable.starter_boxes(a.starter_boxes)
+puts '---------------------------------'
+puts ' '
+
+
+puts '**Refills**'
+puts ' '
+Printable.refills(a.refills)
+puts '---------------------------------'
+puts ' '
+
+
+puts '**Scheduling**'
+puts ' '
+Printable.full_print(a.scheduling)
+puts '---------------------------------'
+puts ' '
+
+
+puts '**Mail Class**'
+puts ' '
+Printable.full_print(a.mail_class)
+puts '---------------------------------'
+puts ' '
+
+
+
+puts '**Paste Kits**'
+puts ' '
+Printable.full_print(a.paste_kits)
+puts '---------------------------------'
+puts ' '
